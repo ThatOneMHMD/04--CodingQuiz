@@ -1,0 +1,299 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f9fbfd;
+ 
+}
+
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+nav {
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    
+}
+
+nav h1{
+
+    font-size: 38px;
+    color: #f9fbfd;
+}
+
+.float-L{
+
+    display: flex;
+    justify-content: start;
+
+    
+}
+
+.float-R{
+
+    display: flex;
+    justify-content: end;
+
+    
+}
+
+main{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 24px;
+    width: 50%;  
+}
+
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    font-size: 24px;
+    width: 50%; 
+}
+
+.row{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button{
+
+    padding: 5px 15px;
+    margin: 20px 20px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: #f9fbfd;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+button a{
+
+    background-color: blueviolet;
+    color: #f9fbfd;
+    text-decoration: none;
+}
+
+main p{
+
+    margin: 20px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 24px;
+    box-sizing: border-box;
+    border-top: 5px solid blueviolet;
+    width: 100%;
+}
+
+button:hover {
+
+    opacity: 70%;
+    cursor: pointer;
+}
+
+button:active {
+
+    opacity: 40%;
+}
+
+.container-2 {
+
+    width: 100%;
+
+}
+
+.scoreStyling h1{
+
+    font-size: 28px;
+}
+
+.scoreStyling h1 {
+
+    font-size: 24px;
+}
+
+input{
+
+    width: 100%;
+    padding: 20px;
+    box-shadow: blue;
+    border: 5px solid blueviolet;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table, th, td {
+
+    border: 1px solid;
+}
+  
+table {
+
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+#submit, #clearBtn {
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+}
+
+@media (max-width: 1100px) {
+ 
+    .container, main{
+
+        width: 100%;
+        margin-top: 0;
+        overflow-x: hidden;
+    }
+
+    main h1, header h1 {
+
+        font-size: 30px;
+
+    }
+
+    main p {
+
+        font-size: 26px;
+    }
+
+    main button {
+
+        font-size: 26px;
+    }
+}
+  
+@media (max-width: 700px) {
+    
+    .container, main{
+
+        width: 100%;
+        margin-top: 0;
+        overflow-x: hidden;
+
+    }
+
+    main h1, header h1 {
+
+        font-size: 22px;
+        text-align: center;
+
+    }
+
+    main p {
+
+        font-size: 18px;
+    }
+
+    main button {
+
+        font-size: 18px;
+    }
+
+    table {
+
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    #submit, #clearBtn {
+    
+        font-size: 18px;
+        display: inline;
+
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .container, main{
+
+        width: 100%;
+        margin-top: 18px;
+        overflow-x: hidden;
+
+    }
+
+    main h1, header h1 {
+
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+    main p {
+
+        font-size: 15px;
+    }
+
+    main button {
+
+        font-size: 15px;
+    }
+
+    table {
+
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    #submit, #clearBtn {
+    
+        font-size: 16px;
+        display: inline;
+    }
+}

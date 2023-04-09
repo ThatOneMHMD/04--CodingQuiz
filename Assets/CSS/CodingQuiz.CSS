@@ -1,9 +1,13 @@
+/* There is only one CSS sheet, meaning that this sheet is responsible for all the styling done on the many html pages!! */
+
+/* general box styling for all elements */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* small reset */
 html,
 body,
 .wrapper {
@@ -12,20 +16,22 @@ body,
   padding: 0;
 }
 
+/* styling for body: font family and background colour! */
 body {
+
   font-family: 'Courier New', Courier, monospace;
   background-color: #f9fbfd;
- 
 }
 
+/* padding for the wrapper class (which was applied for the <main>s for all html pages to keep it consistent! */
 .wrapper {
+
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-
-
+/* styling for nav bar*/
 nav {
 
     box-sizing: border-box;
@@ -39,31 +45,30 @@ nav {
     justify-content: space-between;
     position: fixed;
     top: 0;
-    
 }
 
+/* for the title in navbar */
 nav h1{
 
     font-size: 38px;
     color: #f9fbfd;
 }
 
+/* a class for any section that I want to make it appear to the left */
 .float-L{
 
     display: flex;
     justify-content: start;
-
-    
 }
 
+/* a class for any section that I want to make it appear to the right */
 .float-R{
 
     display: flex;
-    justify-content: end;
-
-    
+    justify-content: end;  
 }
 
+/* for main */
 main{
 
     display: flex;
@@ -71,6 +76,7 @@ main{
     justify-content: center;
 }
 
+/* for sections inside the main */
 main section{
 
     display: flex;
@@ -82,7 +88,7 @@ main section{
     width: 50%;  
 }
 
-
+/* for container class */
 .container{
 
     display: flex;
@@ -94,6 +100,7 @@ main section{
     width: 50%; 
 }
 
+/* class for anywhere I need a row */
 .row{
 
     display: flex;
@@ -101,6 +108,7 @@ main section{
     justify-content: center;
 }
 
+/* for all buttons */
 button{
 
     padding: 5px 15px;
@@ -113,6 +121,7 @@ button{
     flex-direction: column;
 }
 
+/* for all links in the buttons */
 button a{
 
     background-color: blueviolet;
@@ -120,6 +129,7 @@ button a{
     text-decoration: none;
 }
 
+/* all paragraphs in main */
 main p{
 
     margin: 20px 0;
@@ -133,33 +143,32 @@ main p{
     width: 100%;
 }
 
+/* all buttons, applies when hovering over then */
 button:hover {
 
     opacity: 70%;
     cursor: pointer;
 }
 
+/* when clicking any button */
 button:active {
 
     opacity: 40%;
 }
 
+/* a class for another container. Note that I use many containers (1-3) and they may correspond to different html pages */
 .container-2 {
 
     width: 100%;
-
 }
 
+/* the title inside named class */
 .scoreStyling h1{
 
     font-size: 28px;
 }
 
-.scoreStyling h1 {
-
-    font-size: 24px;
-}
-
+/* for the input boxes where input from user is required */
 input{
 
     width: 100%;
@@ -171,11 +180,13 @@ input{
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* for the table, its rows, and its columns */
 table, th, td {
 
     border: 1px solid;
 }
-  
+
+/* for the table */
 table {
 
     width: 100%;
@@ -183,12 +194,14 @@ table {
     font-size: 28px;
 }
 
+/* specific IDs for the submit and clear buttons */
 #submit, #clearBtn {
 
     font-family: 'Courier New', Courier, monospace;
     font-size: 22px;
 }
 
+/* applies these stylings whenever the screen size is adjusted to the given range */
 @media (max-width: 1100px) {
  
     .container, main{
@@ -214,7 +227,8 @@ table {
         font-size: 26px;
     }
 }
-  
+
+/* applies these stylings whenever the screen size is adjusted to the given range */
 @media (max-width: 700px) {
     
     .container, main{
@@ -257,6 +271,7 @@ table {
     }
 }
 
+/* applies these stylings whenever the screen size is adjusted to the given range */
 @media (max-width: 500px) {
     
     .container, main{

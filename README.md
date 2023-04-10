@@ -6,25 +6,27 @@ https://thatonemhmd.github.io/03-PasswordGenerator/
 
 ## Description
 
-This is a webpage for the improved JavaScript Password Generator. Once opened, the user is presented with an application that enables them to generate random passwords based on criteria that they’ve selected. This serves as a measure of increasing security. Additionally, this app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code. It has a clean and polished, responsive user interface that adapts to multiple screen sizes.
+This is a timed coding quiz with multiple-choice questions. Once opened, the user is presented with the home page that features two buttons, one to start the quiz and the other to view current scores. One the start button is clicked, the timer starts and one question is presented. Once answered, another question is presented, and so on. If the answers are correct, or wrong, a "correct!" or a "Wrong!" response will be shown underneath each question. Also, if the choice is wrong, the timer will be decreased by 10 seconds. Once the last question is answered, the user is presented with a box that requires their initials to save their scores. Once their response is submitted, the score list will be presented with the highest scores being displayed on top. The score rows will display the user's initials, time spent, and score. At this point, the user can either press the clear button to clear all scores or the save and retiurn button that saves resutls and transfers user back to the main page. Note that this app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code. It has a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
-## Screenshot of the updated website
+## Screenshots of the website
 
-![03-javascript-homework-demo](https://user-images.githubusercontent.com/126360257/226629203-c195fa4a-f188-452b-9f21-3de7ad46d479.png)
+![coding quiz main page](https://user-images.githubusercontent.com/126360257/230804155-f5e772af-9d31-44e8-bd1a-565d4eea0305.png)
+![coding quiz Q2 with result of Q1](https://user-images.githubusercontent.com/126360257/230804158-61a25fec-f4d4-44f5-878b-d205e89d0cb3.png)
+![coding quiz initials input box](https://user-images.githubusercontent.com/126360257/230804159-1837edb0-ed38-4ff8-9fc5-d501ec61a888.png)
+![coding quiz score list](https://user-images.githubusercontent.com/126360257/230804161-29eb74cf-c3a3-46d5-9395-03ed2dc69b53.png)
 
 
 ## Features
 
-- When the "Generate Password" button is clicked; the user is presented with a series of prompts for password criteria.
-- When prompted for the length of the password; the user chooses a length of at least 8 characters and no more than 128 characters. 
-- If the length chosen is smaller than 8 or larger than 128; then the user will be alerted.
-- When prompted for password criteria; the user selects which criteria to include in the password. The use has the ability to confirm whether or not to include lowercase characters, uppercase characters, numeric values, and/or special characters. 
-- If the user chooses none of the options; then the user will be alerted.
-- When all prompts are answered; then a password is generated that matches the selected criteria. The password gets displayed inside the text box and is easy to copy by user
+- When the click button is clicked, a timer starts and the user is presented with a question
+- When the user answers a question, they are presented with another question while the result of their previous one is shown underneath (correct or wrong!)
+- When the user answers incorrectly, 10 seconds are substracted from the timer
+- when all questions are answered or the timer reaches 0, the game is over
+- When the game is over, the user can save their initials and view their score
 
 ## Note 
 
-To access the base HTML file of the webpage, click on the index.html file above! The CSS and JavaScript files can be found in the assets file!
+To access the base HTML file of the webpage, click on the index.html file above! Other html files are also displayed above. Lastly, the CSS and JavaScript files can be found in the assets file!
 
 ## License
 
@@ -34,6 +36,3 @@ MIT
 
 ThatOneMHMD - The creator of this website!
 (Link: https://github.com/ThatOneMHMD)
-
-Xandromus - The provider of the starter code!
-(Link: https://github.com/coding-boot-camp/friendly-parakeet.git)

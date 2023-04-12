@@ -27,8 +27,8 @@ var timerInterval = setInterval(function(){
     timer--;
     document.querySelector('#timer').textContent = timer
 
-    // when timer reaches 0s, then stop the function and trasnfer user to the mentioned webpage:
-    if (timer === 0){
+    // when timer reaches 0s or less, then stop the function and trasnfer user to the mentioned webpage:
+    if (timer <= 0){
 
         clearInterval(timerInterval)
 
@@ -117,9 +117,9 @@ choices.addEventListener('click', function(event){
     if (event.target.classList.contains("choiceBtn")) {
 
         // for me, can be ignored, but very helpful for debugging
-        console.log(questionsAndAnswers[questionIndex].answer);
-        console.log(event.target.textContent)
-        console.log(event.target.type)
+        // console.log(questionsAndAnswers[questionIndex].answer);
+        // console.log(event.target.textContent)
+        // console.log(event.target.type)
 
         // shows if clicked choice matches correct answeres and displays result under question
         function ShowResults(event){
@@ -129,7 +129,7 @@ choices.addEventListener('click', function(event){
                 results.textContent = "Correct!";
                 
                 // for me
-                console.log("Correct!");
+                // console.log("Correct!");
                 
             } else {
         
@@ -138,8 +138,8 @@ choices.addEventListener('click', function(event){
                 timer = timer - 10;
                 score = score - 20;
 
-                // for me
-                console.log("Incorrect..."); 
+                // for me (Was instructed to remove those...)
+                // console.log("Incorrect..."); 
         
             } 
 
@@ -154,9 +154,9 @@ choices.addEventListener('click', function(event){
         // called
         questionIncrease();
 
-        // for me
-        console.log(score);
-        console.log(timer);
+        // for me (Was instructed to remove those...)
+        // console.log(score);
+        // console.log(timer);
 
     }
 });

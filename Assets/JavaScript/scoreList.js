@@ -45,7 +45,6 @@ function addRecentScore(){
     localStorage.setItem("UpdatedScores", JSON.stringify(updatedScoresNoDuplicates));
 };
 
-
 // func to display scores:
 function displayScores(){
 
@@ -87,7 +86,6 @@ function displayScores(){
     
 };
 
-
 // the func that clears all data in local storage and then calls teh displayscores func to display the table titles as mentioned before! While I could have brought that specific code that adds the titles to this side, the current code makes more sense to me! 
 function clearScores(event) {
     event.preventDefault();
@@ -101,7 +99,6 @@ function clearScores(event) {
 var clearBtn = document.querySelector("#clearBtn")
 clearBtn.addEventListener("click", clearScores);
 
-
 // my submit button is actually called return, but js does not accept a variable named return due to it being used as a key word for functions etc. Note that once this is clicked, user is returned to the main page!
 submit.addEventListener("click", function(event){
 
@@ -112,7 +109,6 @@ submit.addEventListener("click", function(event){
     // do not use: makes page inaccissible by back arrow:
     // document.location.replace("./index.html");
 });
-
 
 // overall, this ensures that the functions do not run when I refresh the page, because I had that happen whenever I changed some small steps in the code above. Thus, this makes sure that even if I change some small things, this still applies!
 var hasRun = false;

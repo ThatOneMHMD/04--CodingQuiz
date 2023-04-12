@@ -25,7 +25,7 @@ submit.addEventListener("click", function(event) {
 
   // if it does exist, giving us if(true), then give the mentioned alert!
   if (isDuplicate) {
-    alert("Initials already exist!");
+    alert("Initials already exist! Try Adding a number or other letters at the end of your initials! (The character limit is 5)");
     return;
   }
 
